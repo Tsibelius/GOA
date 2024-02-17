@@ -1,0 +1,20 @@
+name="goa progreming acedemy"
+print (name)
+
+
+is_ugly=False
+
+the_best_acedemy=True
+entertaining=True
+actually_learn_something_in_the_place=True
+best_mentors=True
+friendly_environment=True
+
+study_heare_and_become_a_real_chad=True
+
+surname="giorgi vanishvili"
+
+age="luka gogokhia"
+
+print (surname + " " + str(age))
+
