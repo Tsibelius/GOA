@@ -57,6 +57,7 @@ name="Goal"
 surname="orientadze"
 age=100
 print(name + surname + age)
+
 #      ა)Goal orientadze          ბ)100       გ)Goal orientadze 100           დ) Error
 #                     სწორი პასუხია:Error
 
@@ -65,9 +66,26 @@ num1=10
 num2=20
 print(str(num1) + str(num2))
 
-#      ა)10+20          ბ)1020       გ)30       გ)"30"
+#      ა)10+20          ბ)1020       გ)30           დ)"30"
 #                     სწორი პასუხია:1020
 
 # რას გამოიტანს კოდი,როდესაც მომხმხმარებელი შეიტანს 7-ს ?
 num11 = float(input("enter number: "))
-print(type(num11))  
+print(type(num11))
+
+#      ა)7           ბ)<class 'float'>       გ)<class 'int'>           დ)7.0
+#                     სწორი პასუხია:<class 'float'>
+
+# პასუხია:
+x =((True and False) or (False or False))
+y=((False or True) and (False and True))
+print((x and y) or True) 
+#               ა)true     ბ)false 
+#                      სწორი პასუხია:true
+
+# რას გამოიტანს კოდი, როდესაც მომხმარებელი შეიყვანს 20-ს ?
+age = int(input("enter your age:"))
+print(age > 18)
+         
+#      ა)<class 'boolean'>           ბ)false       გ)true           დ)20
+#                      სწორი პასუხია:true        
