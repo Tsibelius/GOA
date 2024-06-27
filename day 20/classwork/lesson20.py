@@ -1,4 +1,4 @@
-hy = 10
+hy = 20
 
 while hy > 0:
     print('GOA')
