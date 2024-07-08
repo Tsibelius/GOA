@@ -60,6 +60,6 @@ def BMI (height , weight):
     elif (bmi >= 38):
         return "obese" , bmi
     
-quote , bmi  = BMI ( heigth , weight)
+quote , bmi  = BMI ( height , weight)
 print("your bmi is: {} and you are: {}" .format (bmi , quote) )   
     
