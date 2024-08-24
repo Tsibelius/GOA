@@ -43,7 +43,7 @@
 
 #number_1=0
 #for chad in range(0,51):
-#    number_1 +- chad
+#    number_1 += chad
 
 
 
@@ -202,13 +202,13 @@
 
 #
 
-customer_budget = float(input("Enter your budget: $"))
+#customer_budget = float(input("Enter your budget: $"))
 
 
-item_price = float(input("Enter the price of the item: $"))
+#item_price = float(input("Enter the price of the item: $"))
 
 
-if customer_budget >= item_price:
-    print("Can buy")
-else:
-    print("Cannot buy")
+#if customer_budget >= item_price:
+#    print("Can buy")
+#else:
+#    print("Cannot buy")
