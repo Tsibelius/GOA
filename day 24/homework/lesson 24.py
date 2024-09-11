@@ -33,10 +33,3 @@ for number in numbers[:]:
 print("Even numbers:", numbers)
 print("odd numbers:" , odd_numbers)  
 
-
-
-<<<<<<< HEAD
- 
-=======
- 
->>>>>>> de5a5e814ca1f5ade3f7ede64c9a0b7bebc5a16c
