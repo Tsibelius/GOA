@@ -1,0 +1,32 @@
+
+        /* ID-ებით განსაზღვრული პარაგრაფები */
+        #para1 {
+            color: red;
+        }
+        #para2 {
+            color: green;
+        }
+        #para3 {
+            color: blue;
+        }
+        #para4 {
+            color: purple;
+        }
+        #para5 {
+            color: orange;
+        }
+
+        /* კლასები ერთნაირი ფერით */
+        .sameColor1 {
+            color: brown;
+        }
+
+        .sameColor2 {
+            color: pink;
+        }
+
+        /* უნიკალური კლასი განსხვავებული ფერით */
+        .uniqueColor {
+            color: teal;
+        }
+    

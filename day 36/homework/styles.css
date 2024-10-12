@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid rgb(0, 128, 255); /* RGB ფერით */
+    background-color: #f0f0f0; 
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+button {
+    background-color: #FF5733; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 100, 50); 
+}
+
+/* Input ველის სტილი */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

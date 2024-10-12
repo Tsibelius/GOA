@@ -1,0 +1,19 @@
+.parent-div {
+    font-size: 500px;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+/* შიგნით მყოფი დივი */
+.child-div {
+    width: 25%; /* 25% 500px-დან იქნება 125px */
+    
+    border: 1px solid red;
+}
+
+/* პარაგრაფი */
+.child-div p {
+    font-size: 50%; /* ტექსტის ზომა მშობელი დივის 50% */
+}
+
