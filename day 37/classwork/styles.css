@@ -1,0 +1,15 @@
+.parent {
+    width: 70vw; 
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.child {
+    width: 50%; 
+    font-size: 100px;
+    background-color: rgb(255, 196, 0);
+}
+
+.child p {
+    font-size: 20%; 
+}

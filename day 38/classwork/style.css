@@ -1,0 +1,38 @@
+p {
+    font-size: 18px;
+}
+
+.para1 {
+    text-decoration: underline;
+    color: red;
+}
+
+.para2 {
+    text-decoration: overline;
+    color: blue;
+}
+
+.para3 {
+    text-decoration: line-through;
+    color: green;
+}
+
+.para4 {
+    text-decoration: overline underline;
+    color: orange;
+}
+
+.para5 {
+    text-decoration: overline line-through;
+    color: purple;
+}
+
+.para6 {
+    text-decoration: underline line-through;
+    color: brown;
+}
+
+.para7 {
+    text-decoration: overline underline line-through;
+    color: rgb(1, 180, 180);
+}
