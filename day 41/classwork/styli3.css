@@ -1,0 +1,14 @@
+.image-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .custom-image {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-image:hover {
+    transform: scale(1.1);
+  }

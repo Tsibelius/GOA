@@ -1,0 +1,15 @@
+.custom-button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(60, 255, 0);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 176, 5);
+    font-size: 18px;
+  }
