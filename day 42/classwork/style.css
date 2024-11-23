@@ -1,0 +1,21 @@
+table {
+    width: 70%;
+    border:1px solid black;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: grey;
+}
+
+tr:first-child {
+    font-weight: bold;
+    background-color: lightblue;
+}
