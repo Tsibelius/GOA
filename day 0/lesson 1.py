@@ -94,7 +94,7 @@ left(90)
 forward(40)
 left(90)
 end_fill()
-#draw a square
+# draw a square
 width(7)
 color("blue")
 begin_fill()
