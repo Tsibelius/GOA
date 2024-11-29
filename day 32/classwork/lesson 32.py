@@ -11,7 +11,7 @@ def multiply(a, b):
 # What ways of achieving this do you know?
 
 def number_to_string(num):
-    return str(num)
+   return str(num)
 
 # დავალება მე-3
 
