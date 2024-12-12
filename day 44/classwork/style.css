@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+h1 {
+    text-align: center;
+    color: #8b4513;
+}
+
+
+.ul1 {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+
+.ul2 {
+    list-style-type: circle;
+    margin: 20px 0;
+}
+
+
+.ul3 {
+    list-style-type: square;
+    margin: 20px 0;
+}
+
+
+.ul4 {
+    list-style-type:  georgian;
+    margin: 20px 0;
+}
+
+
+.ul5 {
+    list-style-type: lower-roman;
+    margin: 20px 0;
+}    
