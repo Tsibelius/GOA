@@ -1,1 +1,17 @@
-# no homework
+from turtle import *
+width(7)
+color("blue")
+begin_fill()
+penup()
+goto(30, 140)
+pendown()
+forward(40)
+left(90)
+forward(40)
+left(90)
+forward(40)
+left(90)
+forward(40)
+left(90)
+
+exitonclick()
