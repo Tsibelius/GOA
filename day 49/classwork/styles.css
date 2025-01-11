@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .icon-container {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    background-color: #f9f9f9;
+  }
+  
+  .material-icons {
+    font-size: 36px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .material-icons:hover {
+    color: #007BFF; 
+  }
