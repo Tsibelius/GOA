@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h1 {
+    font-size: 1.5rem;
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 15px;
+  }
+  
+  .card-content p {
+    font-size: 0.9rem;
+    color: hsl(212, 23%, 69%);
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .author-info h2 {
+    font-size: 0.9rem;
+    color: hsl(214, 17%, 51%);
+  }
+  
+  .author-info p {
+    font-size: 0.8rem;
+    color: hsl(212, 23%, 69%);
+  }
+  
+  .share-btn {
+    background-color: hsl(210, 46%, 95%);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .share-btn:hover {
+    background-color: hsl(214, 17%, 51%);
+  }
+  
+  .share-btn img {
+    width: 15px;
+    height: 15px;
+  } 

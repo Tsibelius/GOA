@@ -1,0 +1,53 @@
+/* 1. Display */
+display: flex; /* ელემენტი ხდება Flexbox კონტეინერი */
+display: inline-flex; /* ელემენტი ხდება Flexbox კონტეინერი და ინარჩუნებს inline ქცევას */
+
+/* 2. Flex Direction */
+flex-direction: row; /* default - ელემენტები წყობილია ჰორიზონტალურად */
+flex-direction: row-reverse; /* ელემენტები ჰორიზონტალურად, უკუღმა */
+flex-direction: column; /* ელემენტები ვერტიკალურად */
+flex-direction: column-reverse; /* ელემენტები ვერტიკალურად, უკუღმა */
+
+/* 3. Justify Content */
+justify-content: flex-start; /* ელემენტები იკრიბება კონტეინერის მარცხენა მხარეს */
+justify-content: flex-end; /* ელემენტები იკრიბება კონტეინერის მარჯვენა მხარეს */
+justify-content: center; /* ელემენტები ცენტრში */
+justify-content: space-between; /* პირველი და ბოლო ელემენტი კიდეებზე, სხვები თანაბრად ნაწილდება */
+justify-content: space-around; /* ელემენტებს შორის თანაბარი სივრცე, კიდეებთან ნახევარი სივრცე */
+justify-content: space-evenly; /* თანაბარი სივრცე ელემენტებს შორის და კიდეებთან */
+
+/* 4. Align Items */
+align-items: stretch; /* default - ელემენტები იჭიმება */
+align-items: flex-start; /* ელემენტები კონტეინერის ზედა ნაწილში */
+align-items: flex-end; /* ელემენტები კონტეინერის ქვედა ნაწილში */
+align-items: center; /* ელემენტები ვერტიკალურად ცენტრში */
+align-items: baseline; /* ელემენტები განლაგებულია მათი ტექსტის ქვედა ხაზის მიხედვით */
+
+/* 5. Align Content */
+align-content: stretch; /* default - ხაზები იჭიმება */
+align-content: flex-start; /* ხაზები იკრიბება კონტეინერის ზედა მხარეს */
+align-content: flex-end; /* ხაზები იკრიბება ქვედა მხარეს */
+align-content: center; /* ხაზები ცენტრში */
+align-content: space-between; /* ხაზებს შორის სივრცე თანაბრად ნაწილდება */
+align-content: space-around; /* ხაზებს შორის სივრცე თანაბრად ნაწილდება კიდეებთან ნახევარი */
+align-content: space-evenly; /* ხაზებს შორის თანაბარი სივრცე */
+
+/* 6. Flex Wrap */
+flex-wrap: nowrap; /* default - ყველა ელემენტი ერთ ხაზზე */
+flex-wrap: wrap; /* ელემენტები იჭრება ახალ ხაზზე */
+flex-wrap: wrap-reverse; /* ელემენტები იჭრება ახალ ხაზზე უკუღმა */
+
+/* 7. Flex (child-specific property) */
+flex: 1; /* ელემენტი იჭიმება და იყენებს ხელმისაწვდომ სივრცეს */
+flex: none; /* ელემენტი არ იჭიმება */
+
+/* 8. Order */
+order: 0; /* default - ელემენტების თანმიმდევრობა */
+order: 1; /* ცვლის თანმიმდევრობას */
+
+/* 9. Align Self */
+align-self: auto; /* default - მემკვიდრეობით იღებს align-items-ის მნიშვნელობას */
+align-self: flex-start; /* ინდივიდუალური ელემენტის ზედა განლაგება */
+align-self: flex-end; /* ინდივიდუალური ელემენტის ქვედა განლაგება */
+align-self: center; /* ინდივიდუალური ელემენტი ცენტრში */
+align-self: stretch; /* ინდივიდუალური ელემენტი იჭიმება */
