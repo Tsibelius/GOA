@@ -1,0 +1,126 @@
+.title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+
+body, .description, .category, .price, .cart-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2ebe3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Card Styles */
+.card {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 600px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section */
+.card-image {
+    flex: 1;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content Section */
+.card-content {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.new-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3b7a57;
+    margin-right: 10px;
+}
+
+.old-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Button Styles */
+.cart-button {
+    background-color: #3b7a57;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.cart-button img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.cart-button:hover {
+    background-color: #2e5e46;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .card-image img {
+        height: auto;
+    }
+}
