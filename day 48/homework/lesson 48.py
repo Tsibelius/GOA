@@ -55,7 +55,7 @@ def repeat_str(repeat, string):
 # Task 11: 
 # Remove First and Last Character
 # Remove the first and last character from the given string and return it.
-def remove_char(s):
+def remove_char(s).:
     return s[1:-1]
 
 # Task 12: 
