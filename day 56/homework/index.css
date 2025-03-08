@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://kahoot.com/files/2020/12/Kahoot-Virtual-Background-LivingRoom-1130x636.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.game-container {
+    background: rgba(255, 255, 255, 0.9);
+    width: 650px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+.timer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: purple;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.question-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+
+.options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: relative;
+}
+
+
+.red { background-color: #d9534f; }
+.blue { background-color: #0275d8; }
+.yellow { background-color: #f0ad4e; }
+.green { background-color: #5cb85c; }
+
+
+.option:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.shape {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 20px solid white;
+}
+
+
+.square {
+    width: 20px;
+    height: 20px;
+    background: white;
+}
+
+
+.diamond {
+    width: 20px;
+    height: 20px;
+    background: white;
+    transform: rotate(45deg);
+}
+
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+}
+.answer-container {
+    background: rgba(255, 255, 255, 0.95);
+    width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background: #069606;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #08b108;
+}
+.game-container .answer-container {
+    width: 250px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color:white;
+    text-decoration: none;
+
+}  

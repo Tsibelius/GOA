@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Expand Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            transition: width 2s ease-in-out;
+        }
+        .box:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Exercise</h2>
+        <p>Apply a 2-second transition to the width property of the div.</p>
+        <div class="box"></div>
+        <p>Hover over the div element above.</p>
+    </div>
+</body>
+</html>

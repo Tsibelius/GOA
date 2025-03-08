@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: blue;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s ease, transform 0.5s ease;
+        }
+        .btn:hover {
+            background-color: red;
+        }
+        .btn:active {
+            transform: rotate(360deg) scale(1.5);
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">"join Goa bacome a chad"</button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+        .image-container {
+            position: relative;
+        }
+        .image {
+            width: 200px;
+            height: auto;
+            position: relative;
+            transition: transform 0.5s ease, margin 0.5s ease;
+        }
+        .image:hover {
+            margin-left: 500px;
+            margin-top: 300px;
+            transform: rotateX(360deg);
+        }
+        .image:active {
+            transform: scale(0.5) rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.0360KfDHBRYwPstLaE3CwAHaHa&pid=Api&P=0&h=220" alt="Image" class="image">
+    </div>
+</body>
+</html>

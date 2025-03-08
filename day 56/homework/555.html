@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Div</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            opacity: 0; 
+            transition: 
+                transform 0.6s ease, 
+                background-color 0.4s ease, 
+                opacity 0.4s ease, 
+                width 0.5s ease, 
+                height 0.5s ease;
+        }
+
+        .box:hover {
+            width: 600px;
+            height: 600px;
+        }
+
+        .box:active {
+            background-color: green;
+            transform: rotateY(180deg);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">გიორგი წიბლიაშვილი</div>
+</body>
+</html>
