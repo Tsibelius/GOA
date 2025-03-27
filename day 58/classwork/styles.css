@@ -13,7 +13,7 @@ body {
     border: 8px solid #ddd;
     border-top: 8px solid #3498db;
     border-radius: 50%;
-    animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;                  
 }
 
 @keyframes spin {
