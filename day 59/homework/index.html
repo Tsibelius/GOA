@@ -1,49 +1,56 @@
-<!DOCTYPE html><html lang="en">
+<DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huddle Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">💬 Huddle</div>
-        </header>
-        <main>
-            <div class="illustration">
-                <div class="browser-window">
-                    <div class="top-bar"></div>
-                    <div class="content">
-                        <div class="profile-list">
-                            <div class="profile"></div>
-                            <div class="profile"></div>
-                            <div class="profile"></div>
-                        </div>
-                        <div class="text-lines"></div>
-                    </div>
-                </div>
-                <div class="mobile-window">
-                    <div class="top-bar"></div>
-                    <div class="content">
-                        <div class="profile-list"></div>
-                        <div class="text-lines"></div>
-                    </div>
-                </div>
+    <header class="header">
+        <img src="logo.svg" alt="Huddle Logo" class="logo">
+        <button class="btn">Try it Free</button>
+    </header>
+
+    <section class="hero">
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+        <button class="btn">Get Started For Free</button>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="grow-together.svg" alt="Grow Together">
+            <div>
+                <h2>Grow Together</h2>
+                <p>Generate meaningful discussions with your audience and build a strong, loyal community.</p>
             </div>
-            <div class="content">
-                <h2>Build The Community <br> Your Fans Will Love</h2>
-                <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-                <button class="register">Register</button>
+        </div>
+        <div class="feature reverse">
+            <img src="flowing-conversation.svg" alt="Flowing Conversations">
+            <div>
+                <h2>Flowing Conversations</h2>
+                <p>Our threads have just-in-time loading for a more natural flow.</p>
             </div>
-        </main>
-        <footer>
-            <div class="social-icons">
-                <a href="#">🔵</a>
-                <a href="#">🟣</a>
-                <a href="#">🟠</a>
+        </div>
+        <div class="feature">
+            <img src="your-users.svg" alt="Your Users">
+            <div>
+                <h2>Your Users</h2>
+                <p>It takes no time at all to integrate Huddle with your app’s authentication solution.</p>
             </div>
-        </footer>
-    </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <p>&copy; Huddle. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
