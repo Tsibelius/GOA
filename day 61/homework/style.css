@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+}
+.container {
+    width: 1060px;
+    margin: auto;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: black;
+    font-weight: bold;
+}
+header .container,
+nav, nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    white-space: nowrap;
+}
+nav {
+    width: 600px;
+    padding: 10px 0;
+}
+nav a {
+    text-decoration: none;
+    padding: 5px;
+}
+nav ul {
+    width: 80%;
+}
+.logo {
+    margin: 0 50px;
+}
+#shop {
+    background-color: #F0EFEB;
+}
+h1 {
+    font-size: 3.75em;
+    padding: 20px 0;
+}
+#shop p {
+    font-size: 1.5em;
+}
+#shop button {
+    width: 130px;
+    height: 36px;
+    background-color: black;
+    border-radius: 100px;
+    font-size: 1em;
+    color: #F0EFEB;
+    margin: 30px 0;
+}
+#shop img {
+    width: 550px;
+    margin: 20px;
+}
+#shop .container,
+#society .container {
+    display: flex;
+    align-items: center;
+}
+h2 {
+    font-size: 2.25em;
+    text-align: center;
+    margin: 60px 0 30px 0;
+}
+#bestsellers p {
+    font-size: 1.25em;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px auto;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+.card {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+.card img {
+    width: 310px;
+}
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 20px auto;
+    width: 50%;
+}
+#bestsellers .card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+#society .container,
+#culture .container,
+#politics .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 75px 0 50px 0;
+    margin: auto;
+}
+#society img, #culture img, #politics img {
+    width: 385px;
+}
+.text {
+    width: 550px;
+}
+.text p {
+    font-size: 2.25em;
+    margin-bottom: 40px;
+}
+h3 {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 30px 0;
+}
+#society, #politics {
+    background-color: rgba(204, 204, 204, 0.3);
+}
+#culture {
+    background-color: rgba(204, 204, 204, 0.6);
+}
+#culture .container {
+    flex-direction: row-reverse;
+}
+#culture .text {
+    text-align: right;
+}
+#features {
+    margin: 150px 0 100px 0;
+}
+#features h2 {
+    font-weight: normal;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.feature {
+    font-size: 1.875em;
+    font-weight: bold;
+    text-align: center;
+    width: 20%;
+    margin: 40px;
+}
+.circle {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    margin-bottom: 26px;
+    border-radius: 50%;
+}
+#feature1 {
+    background: rgba(33, 247, 236, 1);
+}
+#feature2 {
+    background: rgba(51, 211, 188, 1);
+}
+#feature3 {
+    background: rgba(24, 165, 198, 1);
+}
+#feature4 {
+    background: rgba(211, 143, 98, 1);
+}
+#feature5 {
+    background: rgba(249, 76, 67, 1);
+}
+#feature6 {
+    background: rgba(211, 153, 255, 1);
+}
+#interviews {
+    background: linear-gradient(360deg, rgba(240, 240, 240, 1) 50%, white 50%);
+}
+.interviews {
+    display: flex;
+    justify-content: space-between;
+}
+#interviews h2 {
+    margin-bottom: 100px;
+}
+#interviews h5 {
+    font-size: 1.375em;
+    width: 100%;
+    
+}
+#interviews .card {
+    width: 25%;
+}
+#interviews .card img {
+    width: 290px;
+}
+#interviews .card p {
+    font-size: 1.25em;
+    margin: 40px auto;
+}
+#form p{
+    width: 40%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+#form h2 {
+    margin-bottom: 10px;
+}
+#subscribe {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+input {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input[name='email'] {
+    width: 100%;
+}
+input[name='first-name'] {
+    width: 40%;
+}
+input[name='last-name'] {
+    width: 40%;
+}
+#subscribe button {
+    width: 115px;
+    height: 33px;
+    border-radius: 100px;
+    background-color: black;
+    color:white;
+    font-size: 0.9em;
+    margin: 6px auto 80px auto;
+}
+footer {
+    background-color: rgba(2, 2, 2, 1);
+    color: white;
+    height: 310px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+footer p {
+    margin: 16px;
+    text-align: center;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper>div {
+    margin-top: 50px;
+}
+.contacts, .icons {
+    display: flex;
+    justify-content: space-between;
+}
+footer .icons {
+    margin: 35px 10px;
+}
+.col {
+    margin-left: 70px;
+    line-height: 2;
+}
+.col h4 {
+    margin-bottom: 36px;
+}
