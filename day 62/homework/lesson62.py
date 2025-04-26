@@ -17,7 +17,7 @@ def litres(time):
     return time // 2
 
 # დავალება მე-3
-
+                                                                                                                  
 # How good are you really?
 # Return True if your score is better than the average of your class.
 
