@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>სურათის შეცვლა</title>
+</head>
+<body>
+
+  <h2>დავალება 7</h2>
+
+  <!-- სურათს მივუთითებთ მოქმედებას პირდაპირ -->
+  <img src="https://i1.sndcdn.com/artworks-46Iy8SxkMaxepPTL-u5icpA-t500x500.jpg" width="150"
+   onclick="https://i1.sndcdn.com/artworks-46Iy8SxkMaxepPTL-u5icpA-t500x500.jpg"; this.width=300;">
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>სურათის შეცვლა</title>
+</head>
+<body>
+
+  <h2>დავალება 7</h2>
+
+  <img src="https://i1.sndcdn.com/artworks-46Iy8SxkMaxepPTL-u5icpA-t500x500.jpg" width="150" onclick="change()" id="img">
+
+  <script>
+    function change() {
+      var photo = document.getElementById("img");
+      photo.src = "https://i1.sndcdn.com/artworks-46Iy8SxkMaxepPTL-u5icpA-t500x500.jpg";
+      photo.width = 300;
+    }
+  </script>
+
+</body>
+</html>
