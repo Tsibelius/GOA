@@ -1,4 +1,11 @@
-def split_and_merge(sentence, sep):
-    words = sentence.split()
-    merged_words = [sep.join(word) for word in words]
-    return " ".join(merged_words)
+def vaporcode(s):
+
+    result = ""  
+
+    for char in s:  
+
+        if char != " ":  
+
+            result += char.upper() + "  "  
+
+    return result.strip()
