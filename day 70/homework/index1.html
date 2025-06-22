@@ -3,230 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CoinFusion - Bitcoin Stacking</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-    body {
-      background: #000;
-      color: #fff;
-      line-height: 1.6;
-    }
-    header, section, footer {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .nav-wrapper {
-      background: #fff;
-      padding: 20px 0;
-    }
-    nav {
-      max-width: 800px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #000;
-      padding: 12px 24px;
-      border-radius: 50px;
-    }
-    nav .logo {
-      color: #4d5eff;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 20px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 6px;
-      transition: background 0.2s;
-      font-size: 14px;
-    }
-    nav ul li a:hover {
-      background: #222;
-    }
-    .hero {
-      text-align: center;
-      padding-top: 80px;
-    }
-    .hero h1 {
-      font-size: 48px;
-      font-weight: 800;
-    }
-    .hero p {
-      margin: 20px 0;
-      font-size: 18px;
-      color: #ccc;
-    }
-    .btn-primary {
-      padding: 12px 24px;
-      background: #4d5eff;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .news-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 40px;
-      justify-content: center;
-    }
-    .news-item {
-      background: #1a1a1a;
-      border-radius: 20px;
-      padding: 10px 20px;
-      color: #ccc;
-      font-size: 14px;
-    }
-    .section-light {
-      background: #fff;
-      color: #000;
-    }
-    .section-light h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    .stats {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 40px;
-      margin-top: 30px;
-    }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-    .card {
-      background: #f5f5f5;
-      color: #000;
-      border-radius: 20px;
-      padding: 20px;
-    }
-    .features-dark {
-      background: #111;
-      padding: 80px 20px;
-      color: #fff;
-    }
-    .features-dark h2 {
-      font-size: 28px;
-    }
-    .badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 30px;
-    }
-    .badge {
-      background: #222;
-      padding: 10px 20px;
-      border-radius: 20px;
-    }
-  </style>
+  <title>CoinFusion</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="nav-wrapper">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">CoinFusion</div>
     <nav>
-      <div class="logo">CoinFusion</div>
-      <ul>
+      <ul class="nav-links">
         <li><a href="#">Learn</a></li>
         <li><a href="#">Build</a></li>
         <li><a href="#">Explore</a></li>
         <li><a href="#">Join</a></li>
-        <li><a href="#">Help</a></li>
       </ul>
     </nav>
-  </div>
+  </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Unleash Bitcoin full potential</h1>
-    <p>Stacks enables DeFi, NFTs, apps, and smart contracts for bitcoin</p>
-    <button class="btn-primary">See what's built on stack</button>
-
-    <div class="news-bar">
-      <div class="news-item">Alex raises $8M to bring DeFi to BTC</div>
-      <div class="news-item">Huge gov. own crypto&currency offer</div>
-      <div class="news-item">Alex raises $8.6M to bring DeFi to BTC</div>
-      <div class="news-item">Alex closes $8.4M to bring DeFi to BTC</div>
+    <div class="hero-content">
+      <h1>Unleash Bitcoin<br>full potential</h1>
+      <p>Stacks enables DeFi, NFTs, apps, and<br>smart contracts for bitcoin</p>
+      <a href="#" class="btn-primary">See what’s built on stack</a>
     </div>
   </section>
 
-  <section class="section-light">
-    <h2>Stacking, a new way to earn bitcoin</h2>
-    <p>Hold and temporarily lock STX, stack native currency, and support the network’s security and consensus. As a reward, you’ll earn BTC.</p>
-    <button class="btn-primary" style="margin-top: 20px;">Start Stacking</button>
+  <!-- Ecosystem News -->
+  <section class="ecosystem">
+    <h3>Latest Ecosystem news</h3>
+    <div class="eco-items">
+      <div class="eco-item">Alex raises $8.5M to bring DeFi to BTC</div>
+      <div class="eco-item">Huge gov own crypto/currency offer</div>
+      <div class="eco-item">Alex raises $8.5M to bring DeFi to BTC</div>
+      <div class="eco-item">Alex raises $8.5M to bring DeFi to BTC</div>
+    </div>
+  </section>
 
-    <div class="stats">
-      <div>
-        <h3>9.5%</h3>
-        <p>Annual yield</p>
+  <!-- Stacking Section -->
+  <section class="stacking">
+    <div class="stacking-container">
+      <div class="stacking-text">
+        <h2>Stacking, a<br>new way to<br>earn bitcoin</h2>
+        <p>
+          Held and temporarily lock STX, stack native currency,<br>
+          and support the network’s security and consensus. As a reward,<br>
+          you’ll earn bitcoin.
+        </p>
+        <a href="#" class="btn-secondary">Start Stacking</a>
       </div>
-      <div>
-        <h3>$864,896,126</h3>
-        <p>Total value locked</p>
-      </div>
-      <div>
-        <h3>📊</h3>
-        <p>Data courtesy of stacking club</p>
+
+      <div class="stacking-stats">
+        <div class="stat-item percent">9.5%</div>
+        <div class="stat-item total">$864,896,126</div>
+        <div class="stat-caption">Total value locked</div>
+        <div class="stacking-note">🟣 Data courtesy of<br>stacking club</div>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Stacks unleashed Bitcoin</h2>
-    <div class="card-grid">
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Stacks unleashed<br>Bitcoin</h2>
+    <div class="features-cards">
       <div class="card">
+        <div class="icon">⚡</div>
         <h3>Proof of transfer</h3>
         <p>The consensus mechanism that connects stacks and bitcoin.</p>
-        <a href="#">Learn more →</a>
+        <a href="#">Learn more</a>
       </div>
       <div class="card">
+        <div class="icon">🖼️</div>
         <h3>Bitcoin to NFTs</h3>
         <p>NFTs is supported by bitcoin by uploading on the network.</p>
-        <a href="#">Learn more →</a>
+        <a href="#">Learn more</a>
       </div>
       <div class="card">
+        <div class="icon">₿</div>
         <h3>Bitcoin to DeFi</h3>
         <p>Stacks bring DeFi to bitcoin, unlocking over $1B in capital.</p>
-        <a href="#">Learn more →</a>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+    <p class="see-all">See all features</p>
+  </section>
+
+  <!-- Developer Section -->
+  <section class="developer">
+    <div class="developer-container">
+      <div class="dev-text">
+        <h4>Stacks for developer</h4>
+        <h2>Build powerful apps,<br>secured by bitcoin</h2>
+        <p>Stacks connects to Bitcoin, enabling you to build apps, smart contracts, and digital assets that are integrated with Bitcoin’s security, capital, and network.</p>
+        <a href="#" class="btn-primary">Start Stacking</a>
+      </div>
+      <div class="dev-image">
+        <div class="lock">🔒</div>
+      </div>
+    </div>
+
+    <div class="built-section">
+      <h2>See what<br>being built</h2>
+      <div class="built-tags">
+        <span>Stacks web wallet</span>
+        <span>Defi platform alex</span>
+        <span>Xverse app Jocicoin</span>
+        <span>Xverse meta wallet</span>
       </div>
     </div>
   </section>
 
-  <section class="features-dark">
-    <h2>Build powerful apps, secured by bitcoin</h2>
-    <p>Stacks connects to Bitcoin, enabling you to build apps, smart contracts, and digital assets that are integrated with Bitcoin’s security, capital, and network.</p>
-    <button class="btn-primary" style="margin-top: 20px;">Start Stacking</button>
-
-    <h2 style="margin-top: 60px;">See what being built</h2>
-    <div class="badges">
-      <div class="badge">Stacks web wallet</div>
-      <div class="badge">DeFi platform alex</div>
-      <div class="badge">Xverse app Jocicann</div>
-      <div class="badge">Xverse meta wallet</div>
+  <!-- Mission Section -->
+  <section class="mission">
+    <div class="mission-container">
+      <div class="mission-text">
+        <h2>
+          Stacks mission to create a better, user-owned decentralized internet.
+        </h2>
+        <p>
+          To do it we’re unleashing Bitcoin, the most battle-tested and valueable blockchain in the world.
+        </p>
+        <a href="#" class="btn-primary">Learn about stacks</a>
+      </div>
+      <div class="mission-graphics">
+        <div class="graphic orange">₿</div>
+        <div class="graphic purple">🌀</div>
+      </div>
     </div>
   </section>
 
-  <footer class="section-light">
-    <p>Stacks mission to create a better, user-owned decentralized internet. To do it we’re unleashing Bitcoin, the most battle-tested and valueable blockchain in the world.</p>
-    <button class="btn-primary" style="margin-top: 20px;">Learn about Stacks</button>
-  </footer>
+  
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo">CoinFusion</div>
+      <p>ⓒ 2025 CoinFusion. All rights reserved.</p>
+    </div>
+    <div class="footer-center">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="footer-right">
+      <a href="#">🌐</a>
+      <a href="#">🐦</a>
+      <a href="#">📘</a>
+      <a href="#">📸</a>
+    </div>
+  </div>
+</footer>
+
+
 </body>
 </html>
