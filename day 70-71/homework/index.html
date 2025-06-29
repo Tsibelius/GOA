@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoinFusion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .header {
+      background-color: #000;
+      padding: 1.5rem 0;
+    }
+
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header .logo {
+      color: #6d5dfc;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-color: #000;
+      color: white;
+      padding: 6rem 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: #6d5dfc;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #574ae2;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .stacking .stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+
+    .stats .percent {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .stats .value {
+      font-size: 1.5rem;
+      color: #6d5dfc;
+    }
+
+    .features .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background-color: #f4f4f4;
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      color: #6d5dfc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .developer p,
+    .mission p {
+      max-width: 700px;
+      margin: 1rem auto 2rem;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #000;
+      color: white;
+      padding: 3rem 0;
+    }
+
+    .footer .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .footer-links a {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">CoinFusion</div>
+      <nav>
+        <ul>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Build</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Unleash Bitcoin <br> full potential</h1>
+      <p>Stacks enables DeFi, NFTs, apps, and smart contracts for bitcoin</p>
+      <a href="#" class="btn">See what's built on stack</a>
+    </div>
+  </section>
+
+  <section class="stacking">
+    <div class="container">
+      <h2>Stacking, a new way to earn bitcoin</h2>
+      <div class="stats">
+        <div class="percent">9.5%</div>
+        <div class="value">$864,896,126 <span>Total value locked</span></div>
+      </div>
+      <p>Hold and temporarily lock STX, stacks native currency...</p>
+      <a href="#" class="btn">Start Stacking</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>Stacks unleashed Bitcoin</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Proof of transfer</h3>
+          <p>The consensus mechanism that connects stacks and bitcoin.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="card">
+          <h3>Bitcoin to NFTs</h3>
+          <p>NFTs backed by bitcoin by exploding on the network.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="card">
+          <h3>Bitcoin to DeFi</h3>
+          <p>Stacks brings DeFi to bitcoin, unlocking over $2T in capital.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="developer">
+    <div class="container">
+      <h2>Build powerful apps, secured by bitcoin</h2>
+      <p>Stacks connects to Bitcoin, enabling you to build apps, smart contracts...</p>
+      <a href="#" class="btn">Start Stacking</a>
+    </div>
+  </section>
+
+  <section class="see-built">
+    <div class="container">
+      <h2>See what being built</h2>
+      <!-- Logos/buttons section -->
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="container">
+      <p>Stacks mission to create a better, user-owned decentralized internet...</p>
+      <a href="#">Learn about series</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <h2>Explore Stacks</h2>
+      <div class="footer-links">
+        <a href="#">Wallets</a>
+        <a href="#">Docs</a>
+        <a href="#">Get EXT</a>
+        <a href="#">Apps</a>
+        <a href="#">Learning resources</a>
+        <a href="#">Eco System</a>
+        <a href="#">Event</a>
+        <a href="#">Blog</a>
+        <a href="#">Resources</a>
+        <a href="#">Videos Learning</a>
+        <a href="#">Ethereum Learning</a>
+        <a href="#">Smart contract</a>
+        <a href="#">NFTs</a>
+      </div>
+      <div class="footer-bottom">
+        <div class="logo">CoinFusion</div>
+        <p>Terms & conditions | Sitemap | Privacy Policy | Cookies Policy</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
