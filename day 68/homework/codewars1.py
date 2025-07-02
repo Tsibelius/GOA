@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # დავალება 1-ლი
 
 # Given a string and an integer size.
@@ -77,7 +77,7 @@ def print_array(arr):
             result += ","
 
     return result
-=======
+
 # დავალება 1-ლი
 
 # Given a string and an integer size.
@@ -156,4 +156,4 @@ def print_array(arr):
             result += ","
 
     return result
->>>>>>> 51f3d077d1b506bf49544211686ac6db26ad63e3
+

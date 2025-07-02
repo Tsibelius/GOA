@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 4 - Center Child</title>
+  <style>
+    .parent {
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+      gap: 10px;
+      border: 2px solid gray;
+      padding: 10px;
+      width: max-content;
+    }
+
+    .middle {
+      background-color: red;
+      border: 2px solid black;
+      grid-column: 2;
+      grid-row: 2;
+    }
+  </style>
+</head>
+<body>
+
+<div class="parent">
+  <div class="middle" style="color: aliceblue; text-align: center ;">შუაში ვარ</div>
+</div>
+
+</body>
+</html>

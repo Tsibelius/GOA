@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Colors</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+      gap: 2px;
+      border: 2px solid black;
+      width: max-content;
+    }
+
+    .item {
+      border: 1px solid black;
+    }
+
+    .yellow    { background-color: yellow; grid-column: 2; grid-row: 1; }
+    .bluegray  { background-color: steelblue; grid-column: 4; grid-row: 1; }
+    .purple    { background-color: purple; grid-column: 1; grid-row: 2; }
+    .orange    { background-color: orange; grid-column: 3; grid-row: 2; }
+    .skyblue   { background-color: deepskyblue; grid-column: 1; grid-row: 3; }
+    .green     { background-color: green; grid-column: 4; grid-row: 3; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item yellow"></div>
+    <div class="item bluegray"></div>
+    <div class="item purple"></div>
+    <div class="item orange"></div>
+    <div class="item skyblue"></div>
+    <div class="item green"></div>
+  </div>
+
+</body>
+</html>
