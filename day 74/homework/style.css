@@ -1,0 +1,135 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #ecf2f8;
+    margin: 60px auto;
+}
+
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+        "card1 card1 card2 card5"
+        "card3 card4 card4 card5";
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.card {
+    box-sizing: border-box;
+    background: #733FC8;
+    border-radius: 10px;
+    padding: 32px 28px;
+    display: grid;
+    grid-template-columns: 45px auto;
+    grid-template-rows: 16px 16px auto auto;
+    grid-template-areas:
+        "img name"
+        "img title"
+        "main-quote main-quote"
+        "testimonial testimonial";
+}
+
+.card__name {
+    grid-area: name;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.card__title {
+    grid-area: title;
+    font-size: 11px;
+    opacity: 0.5;
+    margin-top: 2px;
+}
+
+.card__main-quote {
+    grid-area: main-quote;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.card__testimonial {
+    font-size: 13px;
+    grid-area: testimonial;
+    color: #cfcfcf;
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+.card__img {
+    grid-area: img;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.card1 {
+    grid-area: card1;
+    background: #733FC8;
+    color: white;
+    background-image: url(./bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+}
+
+.card2 {
+    grid-area: card2;
+    background: #48556A;
+    color: white;
+}
+
+.card3 {
+    grid-area: card3;
+    background: white;
+    color: #1d2431;
+}
+
+.card4 {
+    grid-area: card4;
+    background: #19212E;
+    color: white;
+}
+
+.card5 {
+    grid-area: card5;
+    background: white;
+    color: #293547;
+}
+
+.accent-border {
+    border: 2px solid #A775F1;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #19212E;
+    width: 400px;
+    margin: 32px auto;
+}
+
+.attribution a {
+    color: #A775F1;
+    text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    background: #A775F1;
+    color: white;
+    padding: 1px 3px;
+}
