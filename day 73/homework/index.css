@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* დავალება 1-ლი /*
 
 /* Welcome to Grid Garden, where you write CSS code to grow your carrot garden!
@@ -276,3 +277,283 @@ grid-row: 5/6
 grid-column: 2/6;
 grid-row: 1/6
 }
+=======
+/* დავალება 1-ლი /*
+
+/* Welcome to Grid Garden, where you write CSS code to grow your carrot garden!
+Water only the areas that have carrots by using the grid-column-start property.
+
+For example, grid-column-start: 3; will water the area starting at the 3rd vertical grid line, 
+which is another way of saying the 3rd vertical border from the left in the grid. 
+*/
+
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-column-start: 3 
+}
+
+
+
+/* დავალება მე-2 /*
+
+/* Uh oh, looks like weeds are growing in the corner of your garden.
+Use grid-column-start to poison them. Note that the weeds start at the 5th vertical grid line.
+*/
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#poison {
+grid-column-start: 5 ;
+}
+
+
+
+/* დავალება მე-3 /*
+
+/* When grid-column-start is used alone, the grid item by default will span exactly one column.
+ However, you can extend the item across multiple columns by adding the grid-column-end property.
+
+Using grid-column-end, water all of your carrots while avoiding the dirt.
+ We don't want to waste any water! Note that the carrots start at the 1st vertical grid line and end at the 4th.
+ */
+
+ #garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 1;
+grid-column-end: 4;  
+}
+
+
+
+/* დავალება მე-4 /*
+
+/* When pairing grid-column-start and grid-column-end, you might assume that the end value has to be greater than the start value.
+But this turns out not the case!
+
+Try setting grid-column-end to a value less than 5 to water your carrots.
+*/
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 5;
+grid-column-end : 2;
+}
+
+
+
+/* დავალება მე-5 /*
+
+/* If you want to count grid lines from the right instead of the left, you can give grid-column-start and grid-column-end negative values.
+For example, you can set it to -1 to specify the first grid line from the right.
+
+Try setting grid-column-end to a negative value
+*/
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 1;
+grid-column-end: 5;
+}
+
+
+
+/* დავალება მე-6 /*
+
+/* Now try setting grid-column-start to a negative value. */
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#poison {
+grid-column-start: 4; 
+}
+
+
+
+/* დავალება მე-7 /*
+
+/* Instead of defining a grid item based on the start and end positions of the grid lines, you can define it based on your desired column width using the span keyword.
+Keep in mind that span only works with positive values.
+
+For example, water these carrots with the rule grid-column-end: span 2;
+*/
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 2;
+grid-column-end: span 2;
+}
+
+
+
+/* დავალება მე-8 /*
+
+/* Try using grid-column-end with the span keyword again to water your carrots. */
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 1;
+grid-column-end : span 5;
+}
+
+
+
+/* დავალება მე-9 /*
+
+/* ou can also use the span keyword with grid-column-start to set your item's width relative to the end position. */
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+ grid-column-start: span 3;
+  grid-column-end: 6;
+}
+
+
+
+/* დავალება მე-10 /*
+
+/* yping both grid-column-start and grid-column-end every time can get tiring.
+Fortunately, grid-column is a shorthand property that can accept both values at once, separated by a slash.
+
+For example, grid-column: 2 / 4; will set the grid item to start on the 2nd vertical grid line and end on the 4th grid line.
+*/
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-column:4/6
+}
+
+
+
+/* დავალება მე-11 /*
+
+/* Try using grid-column to water these carrots. 
+The span keyword also works with this shorthand property so give it a try! */
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-column:2/5
+}
+
+
+
+/* დავალება მე-12 /*
+
+/* One of the things that sets CSS grids apart from flexbox is that you can easily position items in two dimensions: columns and rows.
+grid-row-start works much like grid-column-start except along the vertical axis.
+
+Use grid-row-start to water these carrots.*/
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-row-start: 3;
+}
+
+
+
+/* დავალება მე-13 /*
+
+/* Now give the shorthand property grid-row a try. */
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-row: 3/6
+}
+
+
+
+/* დავალება მე-14 /*
+
+/* Use grid-column and grid-row at the same time to set position in both dimensions. */
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#poison {
+grid-column: 2/3;
+grid-row: 5/6
+}
+
+
+
+/* დავალება მე-15 /*
+
+/* You can also use grid-column and grid-row together to span larger areas within the grid. Give it a try! */
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-column: 2/6;
+grid-row: 1/6
+}
+>>>>>>> 0290795bf52220f3430cac618624cf4f935784d0
