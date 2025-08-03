@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*,*::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218, 22%, 67%);
+  font-family: "Karla",sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 auto;
+  width: 40rem;
+}
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+h2 {
+  color: hsl(204, 43%, 93%);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+p {
+  color: hsl(204, 43%, 93%);
+}
+a{
+  display: block;
+  background-color:  hsl(71, 73%, 54%);
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: hsl(204, 43%, 93%);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin: 2rem;
+}
+.container {
+  padding: 2.5rem;
+}
+.header {
+  background-color: #fff;
+  grid-column: 1/3;
+}
+.header h1 {
+  margin-bottom: 1rem;
+}
+.header h2 {
+  color: hsl(71, 73%, 54%);
+}
+.header p {
+  color: hsl(218, 22%, 67%);
+}
+.subscribtion {
+  background-color: hsl(179, 62%, 43%)
+}
+.subscribtion h1 {
+  display: inline-block;
+  color: hsl(204, 43%, 93%);
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+.tag {
+  display: inline-block;
+  color: hsl(179, 62%, 60%);
+}
+.whyus {
+  background-color: hsl(179, 62%, 60%);
+
+}
+
+@media screen and (max-width: 580px) {
+  .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem;
+  }
+  .header {
+    background-color: #fff;
+    grid-column: 1;
+  }
+}
