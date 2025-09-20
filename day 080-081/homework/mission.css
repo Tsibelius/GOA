@@ -451,18 +451,17 @@ left: -155px;
   max-height: 100%;
 }
 
-/* სათაური - ძველი ზომა */
+
 h1 {
   font-size: 64px;
   font-weight: 800;
   margin: 0;
   text-align: center;
-  background: linear-gradient(90deg, #ffb347, #ff6b6b, #00c78b, #6b5bff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
+
 }
 
-/* ქვესათაური */
+
 main > p {
   margin-top: 12px;
   font-size: 18px;
@@ -472,12 +471,11 @@ main > p {
 
 
 
-/* GRID - 2x2 განლაგება */
 .grid {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* ორი სვეტი */
-  grid-template-rows: auto auto;        /* ორი რიგი */
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: auto auto;        
   gap: 24px;
   text-align: left;
 }
@@ -508,10 +506,10 @@ main > p {
   object-fit: cover;
 }
 
-/* RESPONSIVE */
+
 @media(max-width: 900px) {
   .grid {
-    grid-template-columns: 1fr; /* პატარა ეკრანებზე ერთ სვეტად */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -585,7 +583,7 @@ footer {
   margin-left: 16px;
 }
 
-/* RESPONSIVE */
+
 @media(max-width: 900px) {
   .footer-container {
     flex-direction: column;
