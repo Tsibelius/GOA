@@ -1,0 +1,1 @@
+linear-gradient(to bottom, #000000, #ff7300);
