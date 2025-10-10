@@ -201,10 +201,10 @@
     height: 500px;
   }
   
-  @keyframes slide {
-    0%, 33% { transform: translateX(0); }
-    34%, 66% { transform: translateX(-100%); }
-    67%, 100% { transform: translateX(-200%); }
+  @keyframes slide { /* ანიმაციის გეგმა , როგორ უნდა განვითარდეს */
+    0%, 33% { transform: translateX(0); } /* დროის წერტილები 0% 33% */
+    34%, 66% { transform: translateX(-100%); } /* გადავა მარცხნივ x ღერძზე*/
+    67%, 100% { transform: translateX(-200%); }  
   }
   
   
