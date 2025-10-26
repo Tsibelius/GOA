@@ -37,6 +37,11 @@ while (num <= 20) {
 
 //                                    დავალება მე-4
 
+// 4) შექმენი 4 სია ,ერთ სიაში შეინახეთ სულ სტრინგები,მერე სიაში შეინახე სულ ინტეჯერები,
+// მესამე სიაში შეინახეთ სულ float ები,და მეოთხე სიაში შეინახეთ სულ boolean ები,
+// ასევე შექმენი ბოლოს მეხუთე სია სადაც შეინახავ ოთხივე ტიპის მონაცემს ერთად.
+
+
 let strings = ["Giorgi", "Nino", "mariami", "ana" , "goga"];
 let integers = [1, 2, 3, 4, 5];
 let floats = [1.5, 2.7, 3.14, 4.9];
@@ -49,3 +54,4 @@ console.log(integers);
 console.log(floats);
 console.log(booleans);
 console.log(mixed);
+
