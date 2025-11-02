@@ -7,7 +7,7 @@
 let colors = ['red', 'green', 'blue', 'yellow'];
 colors[0] = 'DarkRed';
 colors[3] = 'Orange';
-console.log('დავალება 1-ლი : ', colors);
+console.log('დავალება 1-ლი : ', colors );
 
 
 //                                               დავალება მე-2
@@ -56,7 +56,7 @@ console.log('დავალება მე-4 :', days);
 // დაბეჭდე თითოეული ელემენტი ინდექსების გამოყენებით ცალ ცალკე.
 
 let fruits2 = ['apple', 'banana', 'cherry'];
-console.log = ("დავალება მე-5 :")
+console.log ("დავალება მე-5 :")
 console.log( fruits2[0]);
 console.log( fruits2[1]);
 console.log( fruits2[2]);
@@ -69,7 +69,7 @@ console.log( fruits2[2]);
 // გამოიტანე ყველა ფერი for ციკლის გამოყენებით
 
 const colors2 = ['red', 'green', 'blue', 'yellow'];
-for (let i = 0; i <= 3; i++) {
+for ( i = 0; i <= 3; i++) {
   console.log('დავალება მე-6 :', colors2[i]);
 }
 
@@ -167,3 +167,39 @@ while (i11 <= 6) {
   console.log('დავალება მე-11 :-: while loop :', word[i11]);
   i11++;
 }
+
+//                                               დავალება მე-12 
+
+// შექმენი ცვლადის სადაც შეინახავ სტრინგს --> "ჰიდროელექტროსადგური"
+// შენი დავალებაა რომ ტერმინალში გამოიტანო "სადგური" ასევე "ელექტრო"
+// მინიშნება: ამოიღეთ სტრინგიდან შესაბამისი ასოები რაც გჭირდებათ და მოახდინეთ მათი კონკატინაცია
+
+let word12 = "ჰიდროელექტროსადგური";
+
+// ამოვიღოთ ასოები, რომ ავაწყოთ "სადგური"
+
+let s1 = word12 [12];
+let s2 = word12 [13];
+let s3 = word12 [14];
+let s4 = word12 [15];
+let s5 = word12 [16];
+let s6 = word12 [17];
+let s7 = word12 [18];
+
+let result1 = s1 + s2 + s3 + s4 + s5 + s6 + s7;
+console.log("დავალება მე-12 :-: პირველი მისია :" ,result1); // გამოიტანს: სადგური
+
+
+// ახლა ავაწყოთ "ელექტრო"
+
+let e11 = word[5];
+let e22 = word[6];
+let e33 = word[7];
+let e44 = word[8];
+let e55 = word[9];
+let e66 = word[10];
+let e77 = word[11];
+
+
+let result2 = e11 + e22 + e33 + e44 + e55 + e66 + e77 ;
+console.log("დავალება მე-12 :-: მეორე მისია :" ,result2); // გამოიტანს: ელექტრო
