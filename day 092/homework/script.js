@@ -156,6 +156,101 @@ for (let i = 0; i < list6.length; i++) {
 console.log("დავალება 6:", list6);
 
 
+
+//                                               დავალება მე-7
+
+// ==================================================================================================
+
+// მოცემული გაქვთ სია:
+
+// [
+// [1, 0, 0, 1, 0],
+// [0, 1, 0, 0, 0],
+// [0, 1, 0, 0, 1]
+// ]  
+
+// ერთი სია არის და ამ სიის შიგნით სამი სია,
+
+// თითოეული ეს სია შეაერთეთ და გადაიყვანეთ ათობით სისტემაში. შემდეგ დაალაგეთ კლებადობით.
+
+// ==================================================================================================
+
+let list = [
+    [1, 0, 0, 1, 0],
+    [0, 1, 0, 0, 0],
+    [0, 1, 0, 0, 1]
+];
+
+
+let values = [16, 8, 4, 2, 1];
+
+
+let decimals = [];
+
+
+
+for (let i = 0; i < list.length; i++) {
+
+    let decimal = 0;
+
+    for (let j = 0; j < list[i].length; j++) {
+        decimal = decimal + list[i][j] * values[j];
+    }
+ 
+    decimals.push(decimal); 
+}
+
+
+let nums = decimals.slice();
+let miau = [];
+
+
+
+let biggest = nums[0];
+
+if (nums[1] > biggest) {
+    biggest = nums[1];
+}
+
+if (nums[2] > biggest) {
+    biggest = nums[2];
+}
+
+
+miau.push(biggest);
+
+
+let pp = [];    
+
+for (let i = 0; i < nums.length; i++) {
+    if (nums[i] !== biggest || pp.includes(nums[i])) {
+        pp.push(nums[i]);
+    }
+}
+nums = pp.slice(); 
+
+
+
+let mid;
+let small;
+
+if (nums[0] > nums[1]) {
+    mid = nums[0];
+    small = nums[1];
+} else {
+    mid = nums[1];
+    small = nums[0];
+}
+
+
+miau.push(mid);
+miau.push(small);
+
+
+console.log(miau);
+
+
+
 //                                               დავალება მე-8
 
 // =====================================================
