@@ -105,7 +105,7 @@ slider {
     font-size: 18px;
 }
 
-.lang .geo:hover {
+.lang .rus:hover {
     color: #c9a35f;
 }
 .slider {
@@ -125,18 +125,18 @@ slider {
     height: 500px;
   }
   
-  @keyframes slide { 
-    0%, 33% { transform: translateX(0); } 
-    34%, 66% { transform: translateX(-100%); } 
+  @keyframes slide { /* ანიმაციის გეგმა , როგორ უნდა განვითარდეს */
+    0%, 33% { transform: translateX(0); } /* დროის წერტილები 0% 33% */
+    34%, 66% { transform: translateX(-100%); } /* გადავა მარცხნივ x ღერძზე*/
     67%, 100% { transform: translateX(-200%); }  
   }
 .lang .eng,
-.lang .rus {
+.lang .geo {
     color: white;
 }
 
 .lang .eng:hover,
-.lang .rus:hover {
+.lang .geo:hover {
     color: #c9a35f;
 }
 

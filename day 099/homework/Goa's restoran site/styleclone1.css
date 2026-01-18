@@ -10,6 +10,22 @@ html, body {
     background: #c9a35f;
 }
 
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+p, a, li, span {
+    font-family: 'Playfair Display', serif;
+}
+
+
+
 .hero {
     position: relative;
     height: 100vh;
@@ -105,7 +121,7 @@ slider {
     font-size: 18px;
 }
 
-.lang .geo:hover {
+.lang .eng:hover {
     color: #c9a35f;
 }
 .slider {
@@ -125,17 +141,17 @@ slider {
     height: 500px;
   }
   
-  @keyframes slide { 
-    0%, 33% { transform: translateX(0); } 
-    34%, 66% { transform: translateX(-100%); } 
+  @keyframes slide { /* ანიმაციის გეგმა , როგორ უნდა განვითარდეს */
+    0%, 33% { transform: translateX(0); } /* დროის წერტილები 0% 33% */
+    34%, 66% { transform: translateX(-100%); } /* გადავა მარცხნივ x ღერძზე*/
     67%, 100% { transform: translateX(-200%); }  
   }
-.lang .eng,
+.lang .geo,
 .lang .rus {
     color: white;
 }
 
-.lang .eng:hover,
+.lang .geo:hover,
 .lang .rus:hover {
     color: #c9a35f;
 }
