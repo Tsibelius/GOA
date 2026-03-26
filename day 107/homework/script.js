@@ -127,15 +127,15 @@ let checkRootArrow = (num) => {
 let binaryToDecimal = function(binary){
 
     let result = 0;
-    let power = 0;
+    let ii = 0;
 
     for(let i = binary.length - 1; i >= 0; i--){
 
         if(binary[i] === "1"){
-            result = result + (2 ** power);
+            result = result + (2 ** ii);
         }
 
-        power++;
+        ii++;
     }
 
     return result;
@@ -147,15 +147,15 @@ let binaryToDecimal = function(binary){
 let binaryToDecimalArrow = (binary) => {
 
     let result = 0;
-    let power = 0;
+    let ii = 0;
 
     for(let i = binary.length - 1; i >= 0; i--){
 
         if(binary[i] === "1"){
-            result = result + (2 ** power);
+            result = result + (2 ** ii);
         }
 
-        power++;
+        ii++;
     }
 
     return result;
@@ -203,6 +203,7 @@ let countLetters = function(text){
 
 
 // arrow function
+
 let countLettersArrow = (text) => {
 
     let result = {};
