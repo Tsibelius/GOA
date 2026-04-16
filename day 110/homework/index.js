@@ -87,8 +87,8 @@ console.log("დავალება 5 - ორნიშნა კვადრ�
 
 var didiTeksti = "dges kargi amindia da vscavlobt javascript-s";
 var asoebisSia = didiTeksti.split(""); 
-
 var pirveliXmovnisIndeqsi = asoebisSia.findIndex(function (aso) {
+
   
   return aso == "a" || aso == "e" || aso == "i" || aso == "o" || aso == "u";
 });
