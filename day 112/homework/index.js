@@ -19,7 +19,7 @@ var user = {
       
       return;
     }
-    if (newPass.length >= 6) {
+    if (newPass.length >= 17) {
       
       this._password = newPass;
     }
