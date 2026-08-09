@@ -1,0 +1,13 @@
+.child1 {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.child2 {
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.1); 
+    display: inline-block;
+    padding: 5px;
+}

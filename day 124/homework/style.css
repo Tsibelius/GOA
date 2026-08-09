@@ -1,0 +1,63 @@
+/* 1) */
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
+/* 2) */
+
+.emoji-box {
+    font-size: 50px;
+}
+
+/* 3) */
+
+.square3 {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+.square3-shadow {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 4) */
+
+.ball4 {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* 5) */
+
+.text-box5 {
+    background-color: #eee;
+}
+
+/* 6) */
+.energy-bar6 {
+    width: 100px;
+    height: 30px;
+    background-color: gray;
+}
+
+/* 7) */
+
+.all-events7 {
+    background-color: #ddd;
+}
+
+/* 8) */
+
+.big-div8 {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+}
+.big-div8-hover {
+    border: 3px solid blue;
+}
