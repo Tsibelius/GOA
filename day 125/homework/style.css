@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    height: 90vh;
+    position: relative;
+    background-color: #f4f4f4;
+}
+
+#character {
+    font-size: 40px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.keys-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 120px;
+}
+
+.key {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.key-active {
+    background-color: blue !important;
+    color: white;
+}
+
+#spaceButton {
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.traffic-lights {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 2px solid #333;
+}
+
+.red-active { background-color: red !important; }
+.yellow-active { background-color: yellow !important; }
+.green-active { background-color: green !important; }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onkeydown="handleKeyDown(event)" onkeyup="handleKeyUp(event)">
+
+    <!-- 1) პერსონაჟი -->
+    <div id="character">🧙‍♂️</div>
+
+    <!-- 2) A S D F G ღილაკები -->
+    <div class="keys-container">
+        <div class="key" id="keyA">A</div>
+        <div class="key" id="keyS">S</div>
+        <div class="key" id="keyD">D</div>
+        <div class="key" id="keyF">F</div>
+        <div class="key" id="keyG">G</div>
+    </div>
+
+    <!-- 3) Space ღილაკი -->
+    <div id="spaceButton">PRESS SPACE</div>
+
+    <!-- 4) ფერადი წრეები -->
+    <div class="traffic-lights">
+        <div class="circle" id="redCircle"></div>
+        <div class="circle" id="yellowCircle"></div>
+        <div class="circle" id="greenCircle"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
