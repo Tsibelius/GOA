@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitBit 19 — The Smartest Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  
+  *{ 
+    box-sizing: border-box; 
+  }
+  body{
+    margin: 0;
+    background: #EDEDED;
+    font-family: "Poppins", sans-serif;
+    color: #1E1E24;
+  }
+
+  
+  .page-card{
+    max-width: 900px;
+    margin: 40px auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+  }
+
+  
+  header{
+    background: #1B1E3D;
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    text-transform: lowercase;
+  }
+
+  
+  .content{
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 40px;
+    padding: 56px 60px;
+    align-items: center;
+  }
+
+  
+  .watch-wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .watch-wrap img{
+    width: 280px;
+    height: auto;
+    display: block;
+  }
+  .watch-time{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+    pointer-events: none;
+  }
+
+  
+  h1{
+    font-weight: 600;
+    font-size: 1.65rem;
+    margin: 0 0 14px;
+    color: #1E1E24;
+  }
+  .lede{
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #8A8A93;
+    margin: 0 0 28px;
+    max-width: 42ch;
+  }
+
+  
+  .label{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+    color: #1E1E24;
+  }
+
+  
+  .swatches{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 26px;
+  }
+  .swatch{
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .swatch.black{ background: #1B1B1F; }
+  .swatch.red{ background: #D14A28; }
+  .swatch.purple{ background: #5B5B8F; }
+  .swatch.mauve{ background: #8F5165; }
+
+  
+  .features{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .pill{
+    background: #F1F1F3;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #1E1E24;
+  }
+
+  
+  .buy-btn{
+    background: #F5A623;
+    border: none;
+    color: #1B1E3D;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+    padding: 12px 26px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .buy-btn:hover{ 
+    background: #DE9310; 
+  }
+  .buy-btn:focus-visible{ 
+    outline: 3px solid #1B1E3D; 
+    outline-offset: 2px; 
+  }
+
+  
+  @media (max-width: 640px){
+    .content{
+      grid-template-columns: 1fr;
+      padding: 36px 24px;
+      text-align: center;
+    }
+    .swatches, .features{ 
+      justify-content: center; 
+    }
+    .lede{ 
+      max-width: none; 
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="page-card">
+
+    <header>
+      <div class="logo">amazon</div>
+    </header>
+
+    <div class="content">
+
+      <div class="watch-wrap">
+        <img src="https://media.discordapp.net/attachments/1275011842686713886/1541063378334785608/black.png?ex=6a94cc5c&is=6a937adc&hm=15c08a345ddc0f49e058455660ab83c7af2e296f46313c21be56b6e536453d25&=&format=webp&quality=lossless&width=512&height=512" alt="">
+        <span class="watch-time">20:16:45</span>
+      </div>
+
+      <div class="details">
+        <h1>FitBit 19 - The Smartest Watch</h1>
+        <p class="lede">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Delenit asperiosrebr
+          adipisci culpa rem? A, tenetur veritatis.
+        </p>
+
+        <span class="label">Select Color</span>
+        <div class="swatches">
+          <span class="swatch black"></span>
+          <span class="swatch red"></span>
+          <span class="swatch purple"></span>
+          <span class="swatch mauve"></span>
+        </div>
+
+        <span class="label">Features</span>
+        <div class="features">
+          <span class="pill">Time</span>
+          <span class="pill">Heart Rate</span>
+        </div>
+
+        <button class="buy-btn">BUY NOW</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
