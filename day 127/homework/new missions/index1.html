@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Date Task</title>
+</head>
+<body>
+
+<script>
+  window.onload = () => {
+    let dateDiv = document.createElement('div');
+    document.body.appendChild(dateDiv);
+
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    let now = new Date();
+    let dayName = days[now.getDay()];
+    let monthName = months[now.getMonth()];
+    let dayNum = now.getDate();
+    let yearNum = now.getFullYear();
+
+    dateDiv.textContent = `${dayName}, ${monthName} ${dayNum}, ${yearNum}`;
+  };
+</script>
+</body>
+</html>

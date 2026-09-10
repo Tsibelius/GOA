@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Check Today Task</title>
+</head>
+<body>
+
+  <button id="checkBtn">Check Today</button>
+  <div id="result"></div>
+
+<script>
+  window.onload = () => {
+    let checkBtn = document.getElementById("checkBtn");
+    let result = document.getElementById("result");
+
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    checkBtn.addEventListener("click", () => {
+      let todayIndex = new Date().getDay();
+      let todayName = days[todayIndex];
+
+      if (todayIndex === 0) {
+        result.textContent = 'Today is ' + todayName + '\n It is a weekend.';
+      } else {
+        result.textContent = 'Today is ' + todayName + '\n It is a working day.';
+      }
+    });
+  };
+</script>
+</body>
+</html>
