@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form mission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+body {
+    font-family: sans-serif;
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    color: #333;
+}
+    </style>
+
+
+
+    <form id="regForm">
+        <input type="text" id="nameInput" placeholder="სახელი...">
+        <input type="email" id="emailInput" placeholder="ელ-ფოსტა...">
+        <input type="password" id="passInput" placeholder="პაროლი...">
+    </form>
+
+    
+    <h1 id="title1">აქ გამოჩნდება სახელი</h1>
+    <h2 id="title2">აქ გამოჩნდება ემაილი</h2>
+    <h3 id="title3">აქ გამოჩნდება პაროლი</h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
